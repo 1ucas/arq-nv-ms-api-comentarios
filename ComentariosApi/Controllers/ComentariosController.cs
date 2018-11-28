@@ -9,7 +9,7 @@ using System.Web.Http;
 
 namespace ComentariosApi.Controllers
 {
-    [RoutePrefix("api/Comentarios")]
+    [RoutePrefix("api/v1/Comentarios")]
     public class ComentariosController : ApiController
     {
         [HttpGet]
