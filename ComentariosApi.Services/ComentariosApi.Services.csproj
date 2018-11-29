@@ -49,10 +49,6 @@
       <Project>{A27E97C0-85D4-4F54-91A1-3AD28833A31B}</Project>
       <Name>ComentariosApi.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ComentariosApi.Repos\ComentariosApi.Repos.csproj">
-      <Project>{9D053C73-AFF0-4D4F-8CC9-31B074B1CA5C}</Project>
-      <Name>ComentariosApi.Repos</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

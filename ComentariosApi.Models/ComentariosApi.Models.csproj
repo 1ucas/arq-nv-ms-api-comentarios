@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="DTOs\ComentarioDTO.cs" />
     <Compile Include="Entidades\ComentarioEntidade.cs" />
+    <Compile Include="Interfaces\IComentariosRepo.cs" />
+    <Compile Include="Interfaces\IComentariosService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

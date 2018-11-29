@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Web.Http;
+using SimpleInjector.Integration.WebApi;
+using ComentariosApi.Injector;
 
 namespace ComentariosApi
 {
@@ -30,6 +32,10 @@ namespace ComentariosApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            // Injetor de dependências
+            InjectorDependency.Iniciar();
+            config.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(InjectorDependency.Container);
         }
     }
 }

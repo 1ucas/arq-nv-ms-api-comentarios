@@ -6,10 +6,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ComentariosApi.Models.Interfaces;
 
 namespace ComentariosApi.Repos
 {
-    public class ComentariosRepo
+    public class ComentariosRepo : IComentariosRepo
     {
         private IMongoDatabase DbComentarios { get; }
         private IMongoCollection<ComentarioEntidade> Comentarios { get; }
