@@ -17,7 +17,7 @@ namespace ComentariosApi.Repos
 
         public ComentariosRepo()
         {
-            string connectionString = "{connectionString}";
+            string connectionString = "mongodb://ms-comentarios:lucas-1234@ds115664.mlab.com:15664/comentarios-db";
             MongoClient client = new MongoClient(connectionString);
             DbComentarios = client.GetDatabase("comentarios-db");
             Comentarios = DbComentarios.GetCollection<ComentarioEntidade>("comentarios");
